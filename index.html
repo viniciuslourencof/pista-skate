@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">    
     <title>Document</title>
 </head>
 <body>
@@ -22,7 +25,21 @@
         <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>       
-    </div>
+    </nav>
+    <main class="principal">
+        <h2 class="titulo-pagina"></h2>
+        <article class="cartao">
+            <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao__imagem">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Video em destaque</p>
+                <h3 class="cartao__titulo">HZC</h3>
+                <p class="cartao__perfil">Bruno Lopes</p>
+                <p class="cartao__info cartao__info--tempo">3 minutos</p>
+                <p class="cartao__info cartao__info--visualizacoes">11 visualizações</p>                
+                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+            </div>
+        </article>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
