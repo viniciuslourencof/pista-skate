@@ -11,7 +11,8 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;    
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px;
 }
 
 .cabecalho {
@@ -19,8 +20,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
-    grid-column: 4 span;
+    /* margin: 8px; */
+    grid-column: span 4;
 }
 
 .lateral {
@@ -28,8 +29,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
-    grid-row: 4 span;
+    /* margin: 8px; */
+    grid-row: span 3;
 }
 
 .meio {
@@ -37,9 +38,9 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
-    grid-row: 4 span;
-    grid-column: 2 span;
+    /* margin: 8px; */
+    grid-column: span 2;
+    grid-row: span 3;
 }
 
 .direita-cima {
@@ -47,7 +48,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
+    /* margin: 8px; */
 }
 
 .direita-baixo {
@@ -55,7 +56,6 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    margin: 8px;
-    grid-row: 2 span;
+    /* margin: 8px; */
+    grid-row: span 2;
 }
-
