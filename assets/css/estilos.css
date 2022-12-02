@@ -113,6 +113,7 @@ body {
     padding: 24px;
     display: grid;
     gap: 16px;
+    grid-column: 2;
 }
 
 .titulo-pagina {
@@ -224,6 +225,7 @@ body {
         height: 80px;
         box-sizing: border-box;
         column-gap: 32px;
+        grid-column: 2;
     }
 
     .cabecalho__menu {
@@ -261,8 +263,10 @@ body {
         font-size: 1.5rem;
     }
     
-    .menu-lateral {        
+    .menu-lateral {          
         width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2; 
     }
 
     .menu-lateral--invisivel {
@@ -298,7 +302,24 @@ body {
     }
 
     .cartao__item {
-        
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
     }
 
+    .cartao__item--thumbnail {
+        width: 32px;
+        grid-row: span 2;
+    }
+
+    .cartao__item-titulo {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+    }
+
+    .cartao__item-perfil {
+        font-size: 0.8rem;
+        color: #95999C;
+    }
 }

@@ -6,13 +6,13 @@
 
 .corpo {
     background-color: #444444;
-    padding: 8px;
+    padding: 16px;
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 8px;
+    gap: 16px;
 }
 
 .cabecalho {
@@ -20,8 +20,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    /* margin: 8px; */
     grid-column: span 4;
+    grid-row: 4;
 }
 
 .lateral {
@@ -29,8 +29,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    /* margin: 8px; */
     grid-row: span 3;
+    grid-column: 4;
 }
 
 .meio {
@@ -38,9 +38,8 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    /* margin: 8px; */
-    grid-column: span 2;
-    grid-row: span 3;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
 }
 
 .direita-cima {
@@ -48,7 +47,7 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    /* margin: 8px; */
+     grid-column: 1;
 }
 
 .direita-baixo {
@@ -56,6 +55,6 @@
     border-radius: 10px;
     min-width: 50px;
     min-height: 50px;
-    /* margin: 8px; */
-    grid-row: span 2;
-}
+    grid-row: 1 / span 2;
+    grid-column: 1; 
+} 
